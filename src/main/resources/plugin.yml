@@ -1,9 +1,13 @@
 name: BannerGenerator
 version: '1.0-SNAPSHOT'
 main: winlyps.bannerGenerator.BannerGenerator
-api-version: '1.20'
+api-version: '1.16'
 authors: [ Winlyps ]
 commands:
   bannergn:
     description: Generates a specified number of banners.
     usage: /bannergn <NumberOfGeneratedBannersMax36>
+permissions:
+  bannergenerator.command.bannergn:
+    description: Allows the player to use the /bannergn command to generate banners.
+    default: op
